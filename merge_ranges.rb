@@ -7,6 +7,7 @@ def merge_ranges(meetings)
   # at each step we can either merge the current meeting with the previous one
   # or we can't and the current meeting is put into merged_meetings
   merged_meetings = [sorted_meetings[0]]
+  # p "sorted meetings #{sorted_meetings}"
   sorted_meetings[1..-1].each do |current_meeting_start, current_meeting_end|
     last_merged_meeting_start, last_merged_meeting_end = merged_meetings[-1]
 
@@ -22,5 +23,5 @@ def merge_ranges(meetings)
   p merged_meetings
 end
 
-merge_ranges([[1, 9], [2, 6], [3, 5], [7, 9]])
-merge_ranges([[1, 5], [2, 4]])
+merge_ranges([[1, 3], [3, 6], [11, 12], [7, 11]])
+# merge_ranges([[1, 5], [2, 4]])
