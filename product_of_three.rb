@@ -11,3 +11,7 @@ end
 
 highest_product_of_three([1, 2, 3, 4])
 highest_product_of_three([-10, -10, 1, 3, 2]) # should return 300 X
+
+# REAL SOLUTION
+
+def highest_product_of_3(array_of_ints)

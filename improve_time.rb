@@ -1,6 +1,6 @@
 def sort_scores(unsorted_scores, highest_possible_score)
   # Array of 0s at indices 0..highest_possible_score.
-  score_counts = [0] * (highest_possible_score + 1)
+  p score_counts = [0] * (highest_possible_score + 1)
 
   # Populate score_counts.
   unsorted_scores.each do |score|
