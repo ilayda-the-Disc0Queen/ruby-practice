@@ -69,7 +69,40 @@ def correct_run_length_encoding(input_string)
   p final_result
 end
 
-correct_run_length_encoding("aaabbfffffcab")
+correct_run_length_encoding("aaabbca") # returns "3a2b1c1a"
+
+def run_length_decoding(input_string)
+
+end
+
+
+run_length_decoding("3a2b1c1a") # returns "aaabbca"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

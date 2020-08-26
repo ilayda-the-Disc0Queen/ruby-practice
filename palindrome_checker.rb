@@ -17,7 +17,7 @@ def if_permutated_is_a_palindrome?(input)
       unpaired_chars.add(char)
     end
   end
- unpaired_chars.delete(nil).size <= 1
+  unpaired_chars.delete(nil).size <= 1
 end
 
 p if_permutated_is_a_palindrome?("ilayda")
