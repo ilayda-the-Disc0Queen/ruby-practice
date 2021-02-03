@@ -28,3 +28,33 @@ HIGHEST_POSSIBLE_SCORE = 100
 
 p sort_scores(unsorted_scores, HIGHEST_POSSIBLE_SCORE)
 # Returns [91, 89, 65, 53, 41, 37]
+
+# AMAZON LIVE CODES
+
+/*
+Given an array of integers, and an integer value X,
+write a function that returns true iff 2 elements sum to X.
+*/
+require 'set'
+
+def find_odd_number(array)
+    seen_numbers = Set.new
+    array.each do |number|
+        if seen_numbers.include?(number)
+            seen_numbers.delete(number)
+        else
+            seen_numbers.push(number)
+        end
+    end
+   p seen_numbers
+end
+
+def two_sum_to_x?(array_of_ints, x)
+    set_of_ints = array_of_ints.to_set
+    array_of_ints.any? do |first_number|
+        second_number = x - first_number
+        set_of_ints.include?(second_number)
+    end
+end
+
+# two_sum_to_x?([1, 2, 4], 6) => true

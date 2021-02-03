@@ -1,4 +1,4 @@
-class TreeNode
+ class TreeNode
   attr_accessor :value, :left, :right
 
   def initialize(value)
